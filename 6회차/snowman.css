@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+ul,li{
+  list-style: none;
+}
+
+.wrap{
+  width: 100%;
+  height: 100vh;
+  background-color: #d0e9e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle{
+  width: 300px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.circle >li{
+  width: 100%;
+  background-color: white;
+}
+
+.circle>li:nth-child(1){
+  width: 100px;
+  height: 80px;
+  background-color:rosybrown;
+}
+.circle>li:nth-child(2){
+  width: 150px;
+  height: 30px;
+  background-color:rosybrown;
+}
+
+.circle >li:nth-child(3){
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.circle >li:nth-child(4){
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.circle >li:nth-child(5){
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+}
+.face > .eyes{
+  width: 50px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.eye{
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 10px;
+}
+.mouth {
+  width: 50px;
+  height: 25px;
+  background: #000;
+  border-bottom-left-radius: 50% 100%;
+  border-bottom-right-radius: 50% 100%;
+}
+.button > li{
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.circle >li:nth-child(4)::before{
+  content: "";
+  width: 10px;
+  height: 100px;
+  background-color: rosybrown;
+}
+
+.circle > li:nth-child(4) {
+  position: relative;
+}
+
+.circle > li:nth-child(4)::before,
+.circle > li:nth-child(4)::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background-color: #000;
+  z-index: 0;
+}
+
+.circle > li:nth-child(4)::before {
+  top: 50%;
+  left: -80px;
+  transform: rotate(45deg);
+}
+
+.circle > li:nth-child(4)::after {
+  top: 50%;
+  right: -80px;
+  transform: rotate(-45deg);
+}
+
+
+
+
+
+
+
+
+
+

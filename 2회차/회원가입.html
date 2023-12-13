@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>회원가입</h1>
+    <form>
+      <fieldset>
+        <legend>필수 입력 사항</legend>
+        <ul>
+          <li>
+            <label
+              >이름
+              <input type="text" />
+            </label>
+          </li>
+          <li>
+            <label
+              >아이디
+              <input
+                type="text"
+                min="6"
+                max="20"
+                placeholder="6자 이상 20자 미만 공백없이 입력해주세요"
+              />
+            </label>
+          </li>
+          <li>
+            <label
+              >비밀번호
+              <input type="password" placeholder="대소문자로 입력해주세요" />
+            </label>
+            <label
+              >비밀번호 확인
+              <input
+                type="password"
+                placeholder="비밀번호를 다시 입력해주세요"
+              />
+            </label>
+          </li>
+          <li>
+            <label
+              >이메일
+              <input type="email" />
+            </label>
+          </li>
+          <li>
+            <select>
+              <option selected disabled>지역을 선택해주세요</option>
+              <option>서울</option>
+              <option>경기</option>
+              <option>대전</option>
+              <option>부산</option>
+              <option>경남</option>
+              <option>제주</option>
+            </select>
+          </li>
+          <li>
+            <label
+              >휴대폰
+              <input type="text" />
+            </label>
+            <button>인증번호 전송</button>
+          </li>
+          <li>
+            <label
+              >인증번호 입력
+              <input type="text" />
+            </label>
+            <button>인증확인</button>
+          </li>
+          <li>
+            <input type="radio" name="g" id="m" />
+            <label for="m">남</label>
+            <input type="radio" name="g" id="f" />
+            <label for="f">여</label>
+          </li>
+          <button type="submit">가입하기</button
+          ><button type="reset">취소</button>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>취미</legend>
+        <ul>
+          <li>
+            <input type="checkbox" id="coding" />
+            <label for="coding">코딩</label>
+            <input type="checkbox" id="ex" />
+            <label for="ex">운동</label>
+            <input type="checkbox" id="b" />
+            <label for="b">숨쉬기</label>
+            <input type="checkbox" id="t" />
+            <label for="t">여행</label>
+            <input type="checkbox" id="select" />
+            <label for="s">잠자기</label>
+            <input type="checkbox" id="r" />
+            <label for="r">독서</label>
+            <input type="checkbox" id="n" />
+            <label for="n">넷플릭스</label>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 
+      기호와 함께 사용하는 속성 선택자
+      * : 값의 포함 여부
+      ^ : 값의 시작 여부
+      $ : 값의 끝 여부
+    */
+      /* 속성 선택자 */
+      [width$="0"] {
+        border: 4px dotted black;
+      }
+
+      /* 하위요소 */
+      body em {
+        color: blue;
+      }
+      /* 자식요소 */
+      p>em{
+        color: rgb(16, 102, 177);
+      }
+
+      /* 형제요소 */
+      #sam + p{
+        color: orange;
+      }
+      /* 전체형제 */
+      #sam ~ p{
+        color: red;
+      }
+      /* 형제 선택자는 뒤이어 등장하는 형제들을 대상으로 한다 */
+    </style>
+  </head>
+  <body>
+    <img src="images/bh.jpg" width="120" alt="백현" />
+    <img src="images/bh.jpg" width="120" />
+    <img src="images/bh.jpg" width="120" id="sam"/>
+    <p>
+      Delight으로 '밀리언 셀러'를 기록하면서 서태지 이후 '한국대중가요계에서 두
+      번째로 그룹과 솔로 앨범 모두를 100만장 이상 판매한 가수'가 되었으며, 이후
+      Bambi의 판매량 또한 100만장을 돌파하여 '더블 밀리언 셀러'를 달성하였다.
+      2021년 4월 28일, 또 다시 '한터차트 집계 사상 솔로가수 최초 단일앨범 판매량
+      100만장 돌파'라는 진기록을 세우며 솔로가수로서의 입지를 단단히 하고 있다.
+    </p>
+    <p>
+      Lorem ipsum dolor sit, <em>amet</em> consectetur adipisicing elit. Quo cumque,
+      aperiam nostrum odio laborum vero natus tenetur, possimus iste neque totam
+      hic! Nam, quas hic aut esse accusamus dignissimos ab?
+    </p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo cumque,
+      aperiam nostrum odio laborum vero natus tenetur, possimus iste neque totam
+      hic! Nam, quas hic aut esse accusamus dignissimos ab?
+    </p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo cumque,
+      aperiam nostrum odio laborum vero natus tenetur, possimus iste neque totam
+      hic! Nam, quas hic aut esse accusamus dignissimos ab?
+    </p>
+  </body>
+</html>

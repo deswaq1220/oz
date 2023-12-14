@@ -60,7 +60,7 @@ ul,li{
     align-items: center;
   }
 
-  .menu{
+  label{
     width: 100%;
     height: 100%;
     display: flex;
@@ -94,6 +94,16 @@ ul,li{
     background-color: #D91E0D;
   }
 
+  #menu{
+    display: none;
+  }
+
+#menu:checked ~ .mo_menu_list{
+  display: block;
+}
+.mo_menu_list{
+  display: none;
+}
   
 
 }

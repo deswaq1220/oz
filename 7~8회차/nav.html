@@ -20,9 +20,8 @@
 
     <nav class="mo_navbar">
       <div class="mo_menu_wrap">
-        <div class="menu">
-          😊
-        </div>
+        <input id="menu" type="checkbox"/>
+        <label for="menu">😊</label>
         <ul class="mo_menu_list">
           <li>홈</li>
           <li>소개</li>
@@ -32,12 +31,5 @@
       </div>
     </nav>
   </div>
-  <script>
-    $(document).ready(function(){
-      $(".menu").click(function(){
-        $(".mo_menu_list").slideToggle("slow");
-      })
-    })
-  </script>
 </body>
 </html>

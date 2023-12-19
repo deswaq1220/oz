@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <!-- 
+    1회차 과제
+    
+    사용자로부터 다음 항목들을 입력받아 표시하는 페이지를 만들기
+    1.이름(h1)
+    2.좋아하는 동물 (p)
+    3.좋아하는 과일 (p)
+
+    입력은 모두 prompt(x)로 받는다
+  
+  -->
+
+  <h1 id="name"></h1>
+  <p id="animal"></p>
+  <p id="fruit"></p>
+  <script>
+
+    document.querySelector("#name").textContent = `${prompt("이름을 입력하세요")}입니다`
+
+    document.querySelector("#animal").textContent = `좋아하는 동물은 ${prompt("좋아하는 동물을 입력하세요")} 입니다.`
+
+    document.querySelector("#fruit").textContent = `좋아하는 과일은 ${prompt("좋아하는 과일을 입력하세요")} 입니다.`
+
+  </script>
+</body>
+</html>

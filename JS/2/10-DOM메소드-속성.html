@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1 id="song-title" class="heading" title="에스파의 수록곡">
+    <span>Thirsty</span>
+  </h1>
+
+  <p class="lyrics">
+    난 또 너를 두드리고 있어 반짝이는 수면위를 매일
+  </p>
+  <p class="lyrics">
+    잔잔하게 일렁이는 sign 날 (봐)
+  </p>
+  <script>
+    // 어떤 로직을 구현하려는 가에 따라서 선택해서 쓰면 댐
+    // 선택자 한번에 여러개 선택 시
+    console.log(document.querySelectorAll(".lyrics"))
+    console.log(document.getElementsByClassName("lyrics"))
+
+    const title =  document.getElementById("song-title")
+    console.log(title)
+    
+    console.log(title.textContent)
+    console.log(title.innerText)
+    console.log(title.className)
+    console.log(title.style)
+    console.log(title.title)
+   
+
+  </script>
+</body>
+</html>

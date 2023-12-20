@@ -1,0 +1,143 @@
+*{
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,li{
+  list-style: none;
+}
+body{
+  height: 100vh;
+display: flex;
+align-items: center;
+
+}
+
+.container{
+  width: 500px;
+  height: 800px;
+  position: relative;
+}
+
+.wrap{
+  width: 500px;
+  height: 800px;
+  background-color: rgb(223, 255, 176);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+
+}
+
+form{
+  width: 100%;
+}
+h1{
+  text-align: center;
+  margin: 50px 0;
+}
+ul{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+li{
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+li:nth-child(1)>input,
+li:nth-child(2)>input,
+li:nth-child(3)>input,
+li:nth-child(4)>input,
+li:nth-child(8)>select,
+li:nth-child(10)>input{
+  width: 100%;
+  height: 100%;
+}
+
+li:nth-child(5){
+  display: flex;
+  justify-content: space-between;
+}
+
+
+li:nth-child(5) > input[type="text"] {
+  flex: 1;
+  margin: 0 5px;
+  box-sizing: border-box; /* 추가된 부분 */
+  width:127px;
+}
+
+li:nth-child(5) > input[type="text"]:nth-child(1){
+  margin-left: 0;
+}
+li:nth-child(5) > input[type="text"]:nth-child(3){
+  margin-right: 0;
+}
+
+li:nth-child(6)>p,
+li:nth-child(7)>p{
+  text-align: right;
+}
+
+li:nth-child(6)>button,
+li:nth-child(7)>button{
+  float: right;
+}
+
+li:nth-child(9){
+  text-align: center;
+}
+
+.signupBtn{
+  width: 100%;
+  height: 40px;
+}
+
+.wrap2{
+  width: 500px;
+  height: 800px;
+  background-color: rgb(165, 214, 91);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 10px;
+  z-index:-1 ;
+}
+.wrap3{
+  width: 500px;
+  height: 800px;
+  background-color: rgb(89, 149, 0);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 10px;
+  z-index:-2 ;
+}
+.wrap4{
+  width: 500px;
+  height: 800px;
+  background-color: rgb(93, 122, 0);
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  border-radius: 10px;
+  z-index:-3 ;
+}
+.wrap5{
+  width: 500px;
+  height: 800px;
+  background-color: rgb(29, 87, 0);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 10px;
+  z-index:-4 ;
+}
+
+
+
+

@@ -61,6 +61,19 @@
         star3 += "\n";
       }
 
+      //아래쪽
+
+      for(let i = 5 -2; i >= 0; i--){
+        for(let j = 0; j < 5 - i - 1; j++){
+          star3 += ' ';
+        }
+        for(let j = 0; j < 2 * i + 1; j++){
+          star3 += '*';
+        }
+        star3 += '\n'
+      }
+      
+
       p3.innerText = star3;
       console.log(star3)
       

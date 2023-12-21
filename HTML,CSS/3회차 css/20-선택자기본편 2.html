@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      color: red;
+    }
+    /* 
+    선택자 우선순위: 쓰여진 순서량 관계 없이 적용되는 순위
+    1. 아이디 선택자
+    2. 클래스 선택자
+    3. 태그 선택자
+    */
+    li{
+      color: blue;
+    }
+    .hiphop{
+      color: purple;
+    }
+    #belly{
+      color: orange;
+    }
+
+  </style>
+</head>
+<body>
+  <h2>춤의장르</h2>
+  <ul>
+    <li class="hiphop">비보잉</li>
+    <li class="hiphop">팝핀</li>
+    <li class="hiphop" id="poppin">락킹</li>
+    <li id="belly">벨리</li>
+    <li id="jazz">재즈</li>
+  </ul>
+</body>
+</html>

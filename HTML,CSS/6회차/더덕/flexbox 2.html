@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    body{
+      margin: 0;
+    }
+    ul{
+      padding: 0;
+      list-style: none;
+      height: 200px;
+
+      display: flex;
+      /* justify-content: space-between; */
+      align-items: center;
+    }
+    li{
+      background-color: tomato;
+    }
+    li:nth-child(2n){
+      background-color: turquoise;
+    }
+    li:nth-child(2){
+      /* flex-grow: 2; */
+      /* flex-shrink: 2; */
+    }
+    li:nth-child(2n-1){
+      /* flex-grow: 1; */
+      /* flex-basis: 200px; */
+      flex:1 1 120px;
+    }
+    
+  </style>
+</head>
+<body>
+  <h2>내가 집앞에서 목격한 동물들</h2>
+  <ul>
+    <!-- 플렉스 아이템은 플렉스 컨테이너로서의 역할은 하지 않는다. -->
+    <li>고양이</li>
+    <li>비둘기</li>
+    <li>강아지</li>
+    <li>너구리</li>
+  </ul>
+</body>
+</html>

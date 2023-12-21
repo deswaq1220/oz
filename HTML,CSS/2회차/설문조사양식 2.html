@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>설문조사양식</title>
+  </head>
+  <body>
+    <header>
+      <h1>설문조사 양식</h1>
+      <p>모든 항목에 빠짐없이 체크해주십시오</p>
+    </header>
+    <hr />
+    <main>
+      <form>
+        <fieldset>
+          <legend>개인정보</legend>
+          <label for="name">이름</label>
+          <input type="text" placeholder="실명을 입력하세요" />
+          <br />
+          <label for="email">이메일주소</label>
+          <input type="email" placeholder="이메일을 입력하세요" />
+        </fieldset>
+        <fieldset>
+          <legend>설문</legend>
+          <p>연령대가 어떻게 되십니까?</p>
+          <input type="radio" id="10" name="age" />
+          <label for="10">10대</label>
+          <input type="radio" id="20" name="age" />
+          <label for="20">20대</label>
+          <input type="radio" id="30" name="age" />
+          <label for="30">30대</label>
+          <input type="radio" id="40" name="age" />
+          <label for="40">40대</label>
+          <input type="radio" id="50" name="age" />
+          <label for="50">50대</label>
+          <p>
+            아이돌 덕질할 때 보는 요소를 모두 고르세요
+          </p>
+          <input id="face" type="checkbox" />
+          <label for="face">외모</label>
+          <input id="height" type="checkbox" />
+          <label for="height">키</label>
+          <input id="vocal" type="checkbox" />
+          <label for="vocal">보컬</label>
+          <input id="dance" type="checkbox" />
+          <label for="dance">댄스</label>
+        </fieldset>
+        <fieldset>
+          <legend>기타</legend>
+          <textarea cols="50" rows="10"></textarea>
+        </fieldset>
+        <input type="submit" />
+      </form>
+    </main>
+    <hr />
+    <footer>
+      <p>입력하느라 수고하셨습니다.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>나의 기말고사 점수는 __점, 학점은!!</h1>
+  <p></p>
+  <script>
+    const p = document.querySelector("p")
+
+    let score = parseInt(prompt("기말고사 점수를 입력하세요"))
+    if ( score >= 90 ){
+      p.textContent = `나의 기말고사 점수는 ${score}, 학점은 A`
+    }else if(score >= 80 ){
+      p.textContent = `나의 기말고사 점수는 ${score}, 학점은 B`
+    }else if(score >= 70 ){
+      p.textContent = `나의 기말고사 점수는 ${score}, 학점은 C`
+    }else if(score >= 60 ){
+      p.textContent = `나의 기말고사 점수는 ${score}, 학점은 C`
+    }else{
+      p.textContent = `나의 기말고사 점수는 ${score}, 학점은 F`
+    }
+  </script>
+</body>
+</html>

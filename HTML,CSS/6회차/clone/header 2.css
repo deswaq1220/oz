@@ -1,0 +1,41 @@
+header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+
+.header_wrap{
+  width: 1296px;
+  height: 72px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_logo{
+  box-sizing: border-box;
+}
+
+.header_menu{
+  display: flex;
+  justify-content: space-between;
+}
+.header_menu >li{
+  padding:0 28px;
+  font-weight: 800;
+}
+
+.header_icon{
+  display: flex;
+  justify-content: space-between;
+}
+.header_icon >li{
+  width: 36px;
+  height: 36px;
+  background-color: darkorange;
+}
+
+.header_icon >li:nth-child(2){
+  margin: 0 12px;
+}

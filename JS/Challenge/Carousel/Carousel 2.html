@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .wrap {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .carousel_wrap{
+        width: 700px;
+        overflow: hidden;
+      }
+      .carousel {
+        width: 100%;
+        display: flex;
+        transition: transform .5s ease;
+        
+      }
+      img {
+        width: 100%;
+      }
+      .btnwrap {
+        margin-top: 10px;
+      }
+
+      button {
+        padding: 8px 18px;
+        font-size: 14px;
+        background-color: #fa5a5a;
+        color: white;
+        display: inline-block;
+        border: 1px solid rgba(0, 0, 0, 0.21);
+        border-bottom-color: rgba(0, 0, 0, 0.34);
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.34) inset,
+          0 2px 0 -1px rgba(0, 0, 0, 0.13), 0 3px 0 -1px rgba(0, 0, 0, 0.08),
+          0 3px 13px -1px rgba(0, 0, 0, 0.21);
+      }
+      button:active {
+        top: 1px;
+        border-color: rgba(0, 0, 0, 0.34) rgba(0, 0, 0, 0.21)
+          rgba(0, 0, 0, 0.21);
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.89),
+          0 1px rgba(0, 0, 0, 0.05) inset;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="carousel_wrap">
+        <div class="carousel">
+          <img src="../images/gosimperson 2023-06-21T215108.JPEG" alt="" />
+          <img src="../images/gosimperson 2023-09-14T095906.JPEG" alt="" />
+          <img src="../images/gosimperson 2024.JPEG" alt="" />
+        </div>
+        <div class="btnwrap">
+          <button class="bgColor">🖤</button>
+          <button class="first">화</button>
+          <button class="second">이</button>
+          <button class="third">팅</button>
+          <button class="prev">이전</button>
+          <button class="next">다음</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const bgColorBtn = document.querySelector(".bgColor");
+      const firstBtn = document.querySelector(".first");
+      const secondBtn = document.querySelector(".second");
+      const thirdBtn = document.querySelector(".third");
+      const prevBtn = document.querySelector(".prev");
+      const next = document.querySelector(".next");
+      const carousel = document.querySelector(".carousel");
+
+      let index = 0;
+      //  배경 색
+      bgColorBtn.addEventListener("click", (e) => {
+        if (document.body.style.backgroundColor == "black") {
+          document.body.style.backgroundColor = "";
+        } else {
+          document.body.style.backgroundColor = "black";
+        }
+      });
+
+      firstBtn.addEventListener("click", () => {
+        index = 0;
+        carousel.style.transform = `translateX(-${700 * index}px)`;
+      });
+      secondBtn.addEventListener("click", () => {
+        index = 1;
+        carousel.style.transform = `translateX(-${700 * index}px)`;
+      });
+      thirdBtn.addEventListener("click", () => {
+        index = 2;
+        carousel.style.transform = `translateX(-${700 * index}px)`;
+      });
+
+      next.addEventListener("click", () => {
+        if (index === 2) return;
+        index +=1;
+        carousel.style.transform = `translateX(-${700 * index}px)`;
+      });
+
+      prevBtn.addEventListener("click",()=>{
+        if(index === 0) return;
+        index -= 1;
+        carousel.style.transform = `translateX(-${700 * index}px)`;
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="diary.css">
+</head>
+<body>
+  <div class="wrap">
+    <section >
+      <ul class="header">
+        <li class="date">2023년 12월 12일</li>
+        <li class="weather">
+          <p>날씨 : </p>
+          <label>☀️
+            <input type="radio" name="weather">
+          </label>
+          <label>☁️
+            <input type="radio" name="weather">
+          </label>
+          <label>🌧️
+            <input type="radio" name="weather">
+          </label>
+          <label>❄️
+            <input type="radio" name="weather">
+          </label>
+        </li>
+      </ul>
+      <div class="title">
+        <p>제목 : 처음 css 배운 날</p>
+      </div>
+      <div class="img">
+
+        <img src="images/다운로드.jpeg"/>
+      </div>
+    </section>
+    <table>
+      <tr>
+        <td>오</td>
+        <td>늘</td>
+        <td>은</td>
+        <td>c</td>
+        <td>s</td>
+        <td>s</td>
+        <td>로</td>
+        <td></td>
+        <td>일</td>
+        <td>기</td>
+        <td>장</td>
+        <td>을</td>
+        <td>만</td>
+        <td>들</td>
+      </tr>
+      <tr>
+        <td>었</td>
+        <td>다</td>
+        <td>.</td>
+        <td></td>
+        <td>오</td>
+        <td>랜</td>
+        <td>만</td>
+        <td>에</td>
+        <td></td>
+        <td>하</td>
+        <td>니</td>
+        <td>까</td>
+        <td></td>
+        <td>재</td>
+      </tr>
+      <tr>
+        <td>밌</td>
+        <td>다</td>
+        <td>.</td>
+        <td></td>
+        <td>얼</td>
+        <td>른</td>
+        <td></td>
+        <td>자</td>
+        <td>바</td>
+        <td>스</td>
+        <td>크</td>
+        <td>립</td>
+        <td>트</td>
+        <td>도</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>해</td>
+        <td>보</td>
+        <td>고</td>
+        <td>싶</td>
+        <td>다</td>
+        <td>.</td>
+        <td></td>
+        <td>c</td>
+        <td>s</td>
+        <td>s</td>
+        <td>는</td>
+        <td></td>
+        <td>아</td>
+      </tr>
+      <tr>
+        <td>무</td>
+        <td>리</td>
+        <td>해</td>
+        <td>도</td>
+        <td></td>
+        <td>신</td>
+        <td>기</td>
+        <td>한</td>
+        <td></td>
+        <td>기</td>
+        <td>술</td>
+        <td>이</td>
+        <td></td>
+        <td>많</td>
+      </tr>
+      <tr>
+        <td>다</td>
+        <td>.</td>
+        <td></td>
+        <td>리</td>
+        <td>액</td>
+        <td>트</td>
+        <td>도</td>
+        <td></td>
+        <td>얼</td>
+        <td>른</td>
+        <td></td>
+        <td>배</td>
+        <td>워</td>
+        <td>서</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>동</td>
+        <td>적</td>
+        <td>기</td>
+        <td>능</td>
+        <td></td>
+        <td>다</td>
+        <td></td>
+        <td>뿌</td>
+        <td>셔</td>
+        <td>!</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>4의 배수 5개씩 출력하기</h1>
+  <p id="output"></p>
+
+  <script>
+    function makeMultiplesOfDigit(num){
+      result = ' ';
+      counter = 0;
+
+      for(let i = 1; i <= num; i++){
+        if( i % 4 === 0){
+          result +=i + '\n'
+          counter +=1;
+          if(counter % 5 === 0){
+            result += '<br>'
+          }
+        }
+      }
+      return result;
+    }
+
+    let outputElement = document.getElementById("output")
+    outputElement.innerHTML = makeMultiplesOfDigit(500)
+  </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(0, 0, 76);
+}
+
+.calculator-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: minmax(150px, auto) repeat(5, 1fr);
+  gap: 10px;
+  padding: 10px;
+  background-color: rgb(255, 24, 124);
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+  text-align: right;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.output div {
+  font-size: 2rem;
+}
+
+.previous-operand {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.current-operand {
+  font-weight: bold;
+}
+
+.button {
+  border: none;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.button:active {
+  background-color: rgba(255, 255, 255, 0.6);
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+.button.gray {
+  background-color: rgba(255, 255, 255, 0.6);
+  font-size: 1.5rem;
+}
+
+.button.red {
+  background-color: #ff4757;
+  color: white;
+}
+
+.button.orange {
+  background-color: #ffa502;
+  color: white;
+}
+
+.button.green {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.button.blue {
+  background-color: #3498db;
+  color: white;
+}
+
+.button.purple {
+  background-color: #9b59b6;
+  color: white;
+}
+
+.button.yellow {
+  background-color: #f1c40f;
+  color: white;
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.span-three {
+  grid-column: span 3;
+}

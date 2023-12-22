@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>현재시간: <span></span></h1>
+
+  <script>
+    const span = document.querySelector('span')
+
+    const today = new Date()
+    
+    // let year = today.getFullYear()
+    // let month = today.getMonth() +1
+    // let day = today.getDay()
+    // let hour = today.getHours()
+    // let min = today.getMinutes()
+    // let sec = today.getSeconds()
+
+    span.innerText = today
+  </script>
+</body>
+</html>

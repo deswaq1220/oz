@@ -19,9 +19,21 @@
  */
 
 function question(n, m) {
-    // 여기에서 코드 작성해주세요!
-    
-    let result;
+    // 여기에서 코드 작성해주세요
+    let count = 0;
+    for(let i = 1; i <=10 ; i++){
+        let luckyNum = Math.floor(Math.random() * 9)+1
+        
+        if(n === luckyNum){
+            console.log(i + "회차 🍀행운의 숫자🍀 : " + luckyNum + "당첨!" )
+            count ++;
+        }else{
+            console.log(i + "회차 🍀행운의 숫자🍀 : " + luckyNum + "낙첨..." )
+        }
+    }
+    let result = count * m;
+    console.log("당첨금은 " + result + "원 입니다.");
+    return result;
 }
 
 question(4, 10000);

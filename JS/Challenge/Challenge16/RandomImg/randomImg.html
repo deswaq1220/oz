@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #imgContainer {
+      width: 400px;
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="imgContainer"></div>
+  <button id="btn">멈춰</button>
+  <script>
+    const imgContainer = document.getElementById('imgContainer');
+    const btn = document.getElementById('btn');
+    let a;
+    let timer;
+    let imgArray = [
+      'url("../../images/gosimperson 2023-06-21T215108.JPEG")',
+      'url("../../images/gosimperson 2023-09-14T095906.JPEG")',
+      'url("../../images/gosimperson 2024.JPEG")'
+    ];
+
+    function imageTime(){
+      a = Math.floor(Math.random() *imgArray.length);
+      imgContainer.style.backgroundImage = imgArray[a]
+    }
+
+    timer = setInterval(imageTime,400)
+
+
+    btn.onclick = () =>{
+      clearInterval(timer)
+    }
+    
+  </script>
+</body>
+</html>

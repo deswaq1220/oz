@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="signUp.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrap">
+        <h1>회원가입</h1>
+        <form id="form" action="#">
+          <ul>
+            <li>
+              <input type="email" placeholder="이메일을 입력하세요" name="email" />
+            </li>
+            <li>
+              <input type="text" placeholder="이름을 입력하세요" name="name"/>
+            </li>
+            <li>
+              <input type="password" placeholder="비밀번호를 입력하세요" name="pw1"/>
+            </li>
+            <li>
+              <input type="password" placeholder="비밀번호를 다시 입력하세요" name="pw2"/>
+            </li>
+            <li>
+              <input type="text" placeholder="010" name="phone1" autocomplete="off"/>-
+              <input type="text" placeholder="1234" name="phone2" autocomplete="off"/>-
+              <input type="text" placeholder="5678" name="phone3" autocomplete="off"/>
+            </li>
+            <li>
+              <p>0000</p>
+              <button>인증번호 전송</button>
+            </li>
+            <li>
+              <p>3:00</p>
+              <button disabled>인증완료</button>
+            </li>
+            <li>
+              <select name="region">
+                <option value="seoul">서울</option>
+                <option value="gyeonggi">경기</option>
+                <option value="daejeon">대전</option>
+                <option value="busan">부산</option>
+                <option value="gyeongnam">경남</option>
+                <option value="jeju">제주</option>
+                <option selected disabled>지역을 선택해주세요</option>
+              </select>
+            </li>
+            <li>
+              <input type="radio" name="gender" id="m" value="male"/>
+              <label for="m">남</label>
+              <input type="radio" name="gender" id="f" value="female"/>
+              <label for="f">여</label>
+            </li>
+            <li>
+              <button class="signupBtn" type="submit">가입하기</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+      <div class="wrap2"></div>
+      <div class="wrap3"></div>
+      <div class="wrap4"></div>
+      <div class="wrap5"></div>
+    </div>
+    <script src="signUP.js"></script>
+  </body>
+</html>

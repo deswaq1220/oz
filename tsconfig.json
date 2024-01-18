@@ -8,6 +8,7 @@
     "skipLibCheck": true,
     "outDir": "dist",
     "noUncheckedIndexedAccess": true,
+    "strictNullChecks":true,
     // "lib":["ES2022","DOM"]    //정말 필요한 상황에만 사용                      
   },
   "include": ["TS/src/**/**/*"],

@@ -55,6 +55,7 @@ var _Item_content, _UserRepository_users, _ProductRepository_products;
         name: "Amy",
     });
     console.log(userRepo.findById(1));
+    //implements 키워드는 class의 interface에 만족하는지 여부를 체크할 때 사용된다. implements한 interface의 타입이 없다면 에러를 반환한다.
     class ProductRepository {
         constructor() {
             _ProductRepository_products.set(this, []);

@@ -1,9 +1,9 @@
 
-
+//인터페이스
 interface Api<T> {
   fetchData(endPoint:string) : Promise<T>
 }
-
+//클래스
 class ApiHandler<T> implements Api<T> {
 
   private baseUrl:string;
@@ -33,6 +33,7 @@ type Post = {
   title: string;
   body: string;
 }
+//메인함수
 async function main() {
   const baseUrl ="https://jsonplaceholder.typicode.com"
   const apiHandler = new ApiHandler<Post[]>(baseUrl)

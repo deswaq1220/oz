@@ -1,20 +1,23 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import ExpenseForm from "./components/ExpenseForm";
 import ExpenseList from "./components/ExpenseList";
 import Alert from "./components/Alert";
+import { MdLogoDev } from "react-icons/md";
 const App = () => {
-  const [expense, setExpense] = useState([
-    { id: 1, charge: "콜라", amount: 2000 },
-    { id: 2, charge: "빵", amount: 1000 },
-    { id: 3, charge: "맥북", amount: 2000 },
-  ]);
+  const initialExpenses = JSON.parse(localStorage.getItem('expense')) || []
+  const [expense, setExpense] = useState(initialExpenses);
 
   const [charge, setCharge] = useState("");
   const [amount, setAmount] = useState(0);
   const [edit, setEdit] = useState(false);
   const [id, setId] = useState("");
   const [alert, setAlert] = useState({ show: false });
+
+  useEffect(() =>{
+    localStorage.setItem('expense',JSON.stringify(expense))
+  },[expense])
+
 
   const handleEdit= (id) => {
     const expenses = expense.find(item => item.id === id);
@@ -36,11 +39,13 @@ const App = () => {
   const handleDelete = (id) => {
     const newExpenses = expense.filter((expense) => expense.id !== id);
     setExpense(newExpenses);
+    localStorage.removeItem('expense')
     handleAlert({ type: "danger", text: "아이템이 삭제되었습니다." });
   };
 
   const clearItems = () => {
     setExpense([])
+    localStorage.clear()
   }
 
   const handleSubmit = (e) => {
@@ -100,7 +105,7 @@ const App = () => {
           style={{ width: "100%", backgroundColor: "white", padding: "1rem" }}
         >
           {/* Expense List */}
-          <ExpenseList initialExpenses={expense} handleDelete={handleDelete} handleEdit={handleEdit} clearItems={clearItems} />
+          <ExpenseList initialExpenses={expense} handleDelete={handleDelete} handleEdit={handleEdit} clearItems={clearItems} expense={expense} />
 
         </div>
         <div

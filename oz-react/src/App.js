@@ -100,10 +100,8 @@ const App = () => {
           style={{ width: "100%", backgroundColor: "white", padding: "1rem" }}
         >
           {/* Expense List */}
-          <ExpenseList initialExpenses={expense} handleDelete={handleDelete}
-          handleEdit={handleEdit}
-          clearItems={clearItems}
-          />
+          <ExpenseList initialExpenses={expense} handleDelete={handleDelete} handleEdit={handleEdit} clearItems={clearItems} />
+
         </div>
         <div
           style={{

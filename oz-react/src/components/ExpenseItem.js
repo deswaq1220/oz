@@ -1,6 +1,5 @@
 import "./ExpenseItem.css";
 import { MdDelete, MdEdit } from "react-icons/md";
-
 import React from "react";
 
 const ExpenseItem = ({expense, handleEdit, handleDelete}) => {

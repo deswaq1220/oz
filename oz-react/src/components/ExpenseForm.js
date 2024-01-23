@@ -1,8 +1,9 @@
 import React from "react";
 import "./ExpenseForm.css"
-const ExpenseForm = ({charge,handleCharge,amount,handleAmount,handleSubmit}) =>{
+import { MdSend } from "react-icons/md";
+const ExpenseForm = ({charge,handleCharge,amount,handleAmount,handleSubmit,edit}) =>{
     return (
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="form-center">
           <div className="form-group">
             <label htmlFor="charge">상품</label>
@@ -29,8 +30,9 @@ const ExpenseForm = ({charge,handleCharge,amount,handleAmount,handleSubmit}) =>{
             />
           </div>
         </div>
-        <button type="submit" className="btn" onClick={handleSubmit}>
-          제출
+        <button type="submit" className="btn">
+          {edit ? '수정' : '제출'}
+          <MdSend className="btn-icon"/>
         </button>
       </form>
     );
